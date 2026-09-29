@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarePlus Hospital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">CarePlus Hospital</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#departments">Departments</a>
+            <a href="#doctors">Doctors</a>
+            <a href="#appointment">Appointment</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Home -->
+        <section id="home" class="hero">
+            <div>
+                <h1>Your Health, Our Priority</h1>
+                <p>
+                    Providing quality healthcare with experienced doctors
+                    and modern medical facilities.
+                </p>
+                <a href="#appointment" class="btn">Book Appointment</a>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <h2>About Our Hospital</h2>
+            <p>
+                CarePlus Hospital is committed to providing safe, affordable
+                and quality healthcare to patients.
+            </p>
+
+            <div class="features">
+                <div>
+                    <h3>24/7 Emergency</h3>
+                    <p>Emergency medical services available around the clock.</p>
+                </div>
+
+                <div>
+                    <h3>Expert Doctors</h3>
+                    <p>Experienced doctors and trained medical professionals.</p>
+                </div>
+
+                <div>
+                    <h3>Modern Facilities</h3>
+                    <p>Modern equipment and comfortable patient facilities.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Departments -->
+        <section id="departments">
+            <h2>Our Departments</h2>
+
+            <div class="department-list">
+                <div>Cardiology</div>
+                <div>Neurology</div>
+                <div>Orthopedics</div>
+                <div>Pediatrics</div>
+                <div>General Medicine</div>
+                <div>Emergency Care</div>
+            </div>
+        </section>
+
+        <!-- Doctors -->
+        <section id="doctors">
+            <h2>Our Doctors</h2>
+
+            <div class="doctor-list">
+                <div class="doctor-card">
+                    <h3>Dr. Rahul Sharma</h3>
+                    <p>Cardiologist</p>
+                </div>
+
+                <div class="doctor-card">
+                    <h3>Dr. Priya Patil</h3>
+                    <p>General Physician</p>
+                </div>
+
+                <div class="doctor-card">
+                    <h3>Dr. Amit Kulkarni</h3>
+                    <p>Orthopedic Specialist</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appointment -->
+        <section id="appointment">
+            <h2>Book an Appointment</h2>
+
+            <form id="appointmentForm">
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="department">Department</label>
+                <select id="department" name="department" required>
+                    <option value="">Select Department</option>
+                    <option value="cardiology">Cardiology</option>
+                    <option value="neurology">Neurology</option>
+                    <option value="orthopedics">Orthopedics</option>
+                    <option value="pediatrics">Pediatrics</option>
+                    <option value="general-medicine">General Medicine</option>
+                </select>
+
+                <label for="date">Appointment Date</label>
+                <input type="date" id="date" name="date" required>
+
+                <button type="submit">Book Appointment</button>
+
+            </form>
+
+            <p id="message"></p>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+
+            <p><strong>Address:</strong> Main Road, Your City, India</p>
+            <p><strong>Phone:</strong> +91 98765 43210</p>
+            <p><strong>Email:</strong> info@careplushospital.com</p>
+            <p><strong>Emergency:</strong> 108</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CarePlus Hospital. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
