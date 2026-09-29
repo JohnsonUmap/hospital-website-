@@ -1,0 +1,22 @@
+
+const appointmentForm = document.getElementById("appointmentForm");
+const message = document.getElementById("message");
+
+appointmentForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const department = document.getElementById("department").value;
+    const date = document.getElementById("date").value;
+
+    message.textContent =
+        "Appointment request submitted successfully for " +
+        name +
+        " in " +
+        department +
+        " on " +
+        date +
+        ".";
+
+    appointmentForm.reset();
+});
